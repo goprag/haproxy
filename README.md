@@ -21,7 +21,7 @@
 * make PREFIX=/path/to/haproxy/haproxy-1.6_install install
 
 
-#### Running haproxy
+#### Running haproxy frontend lua
 * cd ../haproxy-1.6_install/
 * create a file called hello_world.lua
 ```lua
