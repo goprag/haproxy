@@ -5,7 +5,7 @@
 ###Installation
 
 #### Install Lua
-````wget http://www.lua.org/ftp/lua-5.3.1.tar.gz`
+```wget http://www.lua.org/ftp/lua-5.3.1.tar.gz
 tar xf lua-5.3.1.tar.gz```
 
 #### Install haproxy
