@@ -60,8 +60,12 @@ global
 ```bash
 sbin/haproxy -f hello_world.cfg -c
 ```
-* sbin/haproxy -f hello_world_content.cfg
-* curl -v 127.0.0.1:10001
+* run haproxy and curl
+```
+sbin/haproxy -f hello_world_content.cfg
+curl -v 127.0.0.1:10001
+
+```
       
     
 
