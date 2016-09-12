@@ -34,7 +34,34 @@ core.register_service("hello-world", "http", function(applet)
         applet:send(response)
     end)
 ```
+* create the config file hello_world.cfg
+```lua
+global
+       lua-load hello_world.lua
 
+        defaults
+            mode http
+            timeout connect 5000ms
+            timeout client 50000ms
+            timeout server 50000ms
+
+        frontend example
+            bind 127.0.0.1:10001
+            http-request use-service lua.hello-world
+
+
+        listen stats
+            # Uncomment "disabeled" below to disable the stats page :
+            # disabled
+            bind       :8888
+            stats uri /
+```
+* Check if config is valid
+```bash
+sbin/haproxy -f hello_world.cfg -c
+```
+* sbin/haproxy -f hello_world_content.cfg
+* curl -v 127.0.0.1:10001
       
     
 
