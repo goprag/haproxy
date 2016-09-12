@@ -65,6 +65,7 @@ sbin/haproxy -f hello_world.cfg -c
 sbin/haproxy -f hello_world.cfg
 curl -v 127.0.0.1:10001
 ```
-      
-    
-
+* Check stats
+```
+http://127.0.0.1:8888/
+```
