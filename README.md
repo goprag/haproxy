@@ -62,9 +62,8 @@ sbin/haproxy -f hello_world.cfg -c
 ```
 * run haproxy and curl
 ```
-sbin/haproxy -f hello_world_content.cfg
+sbin/haproxy -f hello_world.cfg
 curl -v 127.0.0.1:10001
-
 ```
       
     
